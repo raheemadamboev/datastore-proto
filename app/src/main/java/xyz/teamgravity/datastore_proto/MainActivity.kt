@@ -37,8 +37,7 @@ class MainActivity : ComponentActivity() {
                         horizontalAlignment = Alignment.CenterHorizontally,
                         modifier = Modifier.fillMaxSize()
                     ) {
-                        repeat(3) { i ->
-                            val language = Language.values()[i]
+                        Language.values().forEach { language ->
 
                             Row(verticalAlignment = Alignment.CenterVertically) {
                                 RadioButton(
